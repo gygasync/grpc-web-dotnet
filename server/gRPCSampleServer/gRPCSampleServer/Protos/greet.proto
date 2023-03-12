@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCSampleServer";
+
+package echo;
+
+service Echo {
+  // Sends a greeting
+  rpc EchoStream (Empty) returns (stream EchoStreamResponse);
+}
+
+message Empty {
+}
+
+message EchoStreamResponse {
+  string message = 1;
+}
