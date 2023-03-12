@@ -1,0 +1,391 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+
+
+# C/C++ build outputs
+.build/
+build/
+bins
+gens
+libs
+objs
+
+# Python items
+.coverage*
+.eggs
+.pytype
+*.egg
+*.egg-info
+a.out
+cython_debug/
+dist/
+htmlcov/
+py3*/
+python_build/
+python_pylint_venv/
+src/python/grpcio_*/=*
+src/python/grpcio_*/build/
+src/python/grpcio_*/LICENSE
+src/python/grpcio_status/grpc_status/google/rpc/status.proto
+yapf_virtual_environment/
+isort_virtual_environment/
+
+# Node installation output
+node_modules
+src/node/extension_binary/
+
+# gcov coverage data
+reports
+coverage
+*.gcno
+
+# profiler output
+*.prof
+
+# python compiled objects
+*.pyc
+
+# eclipse project files
+.cproject
+.project
+.settings
+
+# cache for run_tests.py
+.run_tests_cache
+.preprocessed_build
+
+# emacs temp files
+*~
+
+# vim temp files
+.*.swp
+
+# Makefile's cache
+cache.mk
+
+# Ruby's local gem information
+Gemfile.lock
+
+# Temporary test reports
+report.xml
+*/sponge_log.xml
+*/success_log_to_rename.xml
+latency_trace.txt
+latency_trace.*.txt
+
+# port server log
+portlog.txt
+
+# gyp generated make files
+*-gyp.mk
+out
+
+# YCM config files
+.ycm_extra_conf.py
+
+# XCode
+^build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.DS_Store
+
+# Swift Package Manager files
+Package.resolved
+
+# Objective-C generated files
+*.pbobjc.*
+*.pbrpc.*
+src/objective-c/**/Build
+
+# Cocoapods artifacts
+Pods/
+Podfile.lock
+*.xcworkspace
+
+# Artifacts directory
+/artifacts/
+
+# Git generated files for conflicting
+*.orig
+
+# IDE specific folder for JetBrains IDEs
+.idea/
+
+# Bazel files
+bazel-*
+bazel_format_virtual_environment/
+tools/bazel-*
+
+# Bazel wrapper
+bazel_wrapper
+bazel_wrapper.bat
+bazel_wrapper.bazelrc
+
+# Debug output
+gdb.txt
+
+# ctags file
+tags
+
+# perf data
+memory_usage.csv
+perf.data
+perf.data.old
+
+# bm_diff
+bm_diff_new/
+bm_diff_old/
+bm_*.json
+bloat_diff_new/
+bloat_diff_old/
+bloaty-build/
+
+# cmake build files
+**/cmake/build/
+
+# Visual Studio Code artifacts
+.cache/*
+.vscode/*
+.history/
+
+# Clion artifacts
+cmake-build-debug/
+
+# Benchmark outputs
+BenchmarkDotNet.Artifacts/
+
+# pyenv config
+.python-version
+
+# clang JSON compilation database file
+compile_commands.json
+
+# IWYU byproducts
+compile_commands_for_iwyu.json
+iwyu.out
+iwyu_files.txt
+iwyu_files0.txt
+iwyu/
+iwyu_build/
+
+# fuzzer logs
+fuzz-*.log
+
+# Created by .ignore support plugin (hsz.mobi)
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+### Go template
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+
+# Rope project settings
+.ropeproject
+
+# localhost cert authority intermediate files
+misc/localhost.csr
+misc/localhostCA.key
+misc/localhostCA.srl
+
+node_modules
+vendor
