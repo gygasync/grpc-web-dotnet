@@ -5,13 +5,13 @@ option csharp_namespace = "gRPCSampleServer";
 package echo;
 
 service Echo {
-  // Sends a greeting
-  rpc EchoStream (Empty) returns (stream EchoStreamResponse);
+  rpc EchoStream (Empty) returns (stream EchoResponse);
+  rpc EchoRequest (Empty) returns (EchoResponse);
 }
 
 message Empty {
 }
 
-message EchoStreamResponse {
+message EchoResponse {
   string message = 1;
 }

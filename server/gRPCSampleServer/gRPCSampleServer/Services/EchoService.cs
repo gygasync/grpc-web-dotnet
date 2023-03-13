@@ -1,4 +1,5 @@
 using Grpc.Core;
+using System.Reflection.Metadata.Ecma335;
 
 namespace gRPCSampleServer.Services;
 
@@ -12,9 +13,15 @@ public class EchoService : Echo.EchoBase
         _logger = logger;
     }
 
+    public override Task<EchoResponse> EchoRequest(Empty _, ServerCallContext context)
+    {
+        _logger.LogInformation("Echo Request");
+        return Task.FromResult(new EchoResponse { Message = DateTimeOffset.Now.ToString("u") });
+    }
+
     public async override Task EchoStream(
         Empty _,
-        IServerStreamWriter<EchoStreamResponse> writer,
+        IServerStreamWriter<EchoResponse> writer,
         ServerCallContext context
     )
     {
@@ -26,7 +33,7 @@ public class EchoService : Echo.EchoBase
             try
             {
                 await writer.WriteAsync(
-                    new EchoStreamResponse { Message = DateTimeOffset.Now.ToString("u") }
+                    new EchoResponse { Message = DateTimeOffset.Now.ToString("u") }
                 );
             }
             catch (Exception ex)
